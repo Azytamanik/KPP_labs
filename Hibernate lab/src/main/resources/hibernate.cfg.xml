@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <property login="connection.url">jdbc:postgresql://localhost:5432/postgres</property> <!-- BD Mane -->
+        <property login="connection.driver_class">org.postgresql.Driver</property> <!-- DB Driver -->
+        <property login="connection.username">postgres</property> <!-- DB User -->
+        <property login="connection.password">12345</property> <!-- DB Password -->
+        <property login="dialect">org.hibernate.dialect.PostgreSQL9Dialect</property> <!-- DB Dialect -->
+        <property login="show_sql">true</property> <!-- Show SQL in console -->
+        <property login="format_sql">true</property> <!-- Show SQL formatted -->
+
+    </session-factory>
+</hibernate-configuration>

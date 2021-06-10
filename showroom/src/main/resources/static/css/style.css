@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h2 {
+    font-size: 2em;
+    color: #000;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+.basket{
+    text-align: center;
+}
+.cars{
+    block-size: max-content;
+    max-width: 600px;
+    width: 100%;
+}
+
+.lbl{
+    max-width: 50px;
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+/*
+FORM
+*/
+.input-search{
+    max-width: 475px;
+    width: 100%;
+}
+.center {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+.center .inputbox {
+    position: relative;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.center .inputbox input {
+    width: 100%;
+    border: 2px solid #000;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+.center .inputbox:last-child {
+    margin-bottom: 0;
+}
+.center .inputbox span {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-size: 1em;
+    transition: 0.6s;
+    font-family: sans-serif;
+}
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+    transform: translateX(-13px) translateY(-35px);
+    font-size: 1em;
+}
+.center .inputbox [type="submit"] {
+    width: 20%;
+    background: dodgerblue;
+    color: #fff;
+    border: #fff;
+}
+.center .inputbox:hover [type="submit"] {
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+
+.box-flex-row{
+    width: 0;
+    height: auto;
+    max-width: 600px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.thtd-size{
+    max-width: 30px;
+}
+/*
+|
+|
+|*/
